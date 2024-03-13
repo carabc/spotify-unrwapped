@@ -1,0 +1,61 @@
+.loadingContainer {
+  height: 100%;
+  background: #121212;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.barsContainer {
+  display: flex;
+  gap: 0.25rem;
+  height: 100%;
+  align-items: center;
+}
+
+.bar {
+  width: 10px;
+  height: 10px;
+  background: #1db954;
+  animation: loading 0.6s infinite alternate;
+}
+
+.barTwo {
+  animation-delay: 0.1s;
+}
+
+.barThree {
+  animation-delay: 0.2s;
+}
+
+.barFour {
+  animation-delay: 0.3s;
+}
+
+.barFive {
+  animation-delay: 0.4s;
+}
+
+.barSix {
+  animation-delay: 0.5s;
+}
+
+.barSeven {
+  animation-delay: 0.6s;
+}
+
+.barEight {
+  animation-delay: 0.7s;
+}
+
+@keyframes loading {
+  0% {
+    /* transform: scaleY(0.1); */
+    height: 10px;
+  }
+  100% {
+    /* transform: scaleY(1); */
+    height: 100px;
+  }
+}

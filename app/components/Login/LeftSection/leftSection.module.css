@@ -1,0 +1,29 @@
+.leftSection {
+  flex: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.leftSectionFooter {
+  display: flex;
+  justify-content: end;
+}
+
+.leftSection h1 {
+  font-size: 4rem;
+  color: #fff;
+}
+
+@media (max-width: 1001px) {
+  .leftSection h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 760px) {
+  .leftSection {
+    display: none;
+  }
+}

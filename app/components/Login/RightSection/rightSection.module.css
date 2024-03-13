@@ -1,0 +1,101 @@
+.rightSection {
+  flex: 1;
+  background: #212121;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.rightSectionContainer {
+  padding: 1rem 2rem;
+  background: #121212;
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  gap: 1rem;
+  border-radius: 50px;
+}
+
+.rightSectionContainer h2 {
+  text-align: center;
+}
+
+.loginButton {
+  background-color: #1db954;
+  width: 60%;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1.25rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.loginButton:hover {
+  background-color: #18a449;
+}
+
+.spotifyIcon {
+  font-size: 3rem;
+  color: #fff;
+  margin-top: -2.25rem;
+}
+
+@media (max-width: 1704px) {
+  .loginButton {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1484px) {
+  .loginButton {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 1295px) {
+  .loginButton {
+    /* font-size: 0.5rem; */
+    width: 70%;
+  }
+}
+
+@media (max-width: 1263px) {
+  .loginButton {
+    padding: 0.5rem 1rem;
+  }
+
+  .rightSectionContainer h2 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1074px) {
+  .loginButton {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .loginButton {
+    font-size: 0.65rem;
+  }
+}
+
+@media (max-width: 760px) {
+  .rightSection {
+    /* flex: 0 1 auto;
+    height: auto;
+    padding: 1rem 0;
+    border-radius: 10px;
+    flex-direction: column; */
+    display: none;
+  }
+}

@@ -1,0 +1,164 @@
+.loginPage {
+  height: 100%;
+  background: #ff77bc;
+  position: relative;
+}
+
+.responsiveLogin {
+  display: none;
+}
+
+.loginContainer {
+  display: flex;
+  height: 100%;
+  max-width: 95%;
+  margin: 0 auto;
+  gap: 2rem;
+  /* -------------------- */
+
+  /* height: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex; */
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.loginFooter {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  /* opacity: 0.5; */
+}
+
+.loginFooter .spotifyIcon {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.loginFooter p {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Responsive login */
+
+.responsiveLogin {
+  background: #212121;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.responsiveLoginHeader {
+  color: #fff;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.darkSigninBox {
+  background: #121212;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  color: #fff;
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.darkSigninBox h2 {
+  text-align: center;
+}
+
+.loginButton {
+  background-color: #1db954;
+  width: 40%;
+  margin: 0 auto;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.loginButton:hover {
+  background-color: #18a449;
+}
+
+.darkSigninBox .spotifyIcon {
+  font-size: 3rem;
+  color: #fff;
+  margin-top: -2.25rem;
+}
+
+@media (max-width: 760px) {
+  .loginContainer {
+    flex-direction: column;
+    gap: 0rem;
+  }
+
+  .loginFooter {
+    display: none;
+  }
+
+  /* .loginContainer {
+    justify-content: center;
+    align-items: center;
+  } */
+
+  .loginContainer {
+    /* max-width: 50%;
+    justify-content: center;
+    align-items: center; */
+    /* ---------------------- */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .responsiveLogin {
+    display: block;
+  }
+}
+
+@media (max-width: 631px) {
+  .loginButton {
+    width: 60%;
+  }
+
+  .responsiveLogin {
+    padding: 2rem 0;
+  }
+}
+
+@media (max-width: 453px) {
+  .responsiveLoginHeader {
+    font-size: 0.75rem;
+  }
+
+  .darkSigninBox h2 {
+    font-size: 1rem;
+  }
+
+  .darkSigninBox .spotifyIcon {
+    font-size: 2rem;
+    margin-top: -2rem;
+  }
+
+  .darkSigninBox .loginButton {
+    /* width: 80%; */
+    font-size: 0.75rem;
+  }
+}
